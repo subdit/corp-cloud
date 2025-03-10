@@ -1,14 +1,15 @@
-import Image from 'next/image';
+import Hero from '@/components/hero';
+import homeImg from '../../public/home.jpg';
 
+console.log(homeImg);
 export default function Home() {
   return (
     <div>
-      Home Page!
-      <img
-        src='https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png'
-        alt='Google Logo'
+      <Hero
+        imgData={homeImg}
+        imgAlt='car factory'
+        title='Professional Cloud Hosting'
       />
-      <Image src='/home.jpg' alt='Home Image' width={500} height={500} />
     </div>
   );
 }
